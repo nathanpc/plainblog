@@ -1,0 +1,54 @@
+=== plainBlog ===
+==== The most lightweight blog engine ever! ====
+
+I've been working very hard on this to make the most lightweight blog engine possible. Everything you need is a XML file and the engine built entirely using jQuery will do the rest of the work for you. My engine will read the XML feed and parse it's content to a full featured blog! You don't need any kind of scripting language like PHP, Ruby or Python installed to run this blog engine, since it's entirely built using jQuery. Upload the files to your server, edit the <tt>feed.xml</tt> file and you're ready to go!
+
+== Installation ==
+
+The installation is very simple, all that you need to do is copy the files to your server public web directory(usually <tt>/var/www</tt> for UNIX systems running Apache), delete the example files:
+
+* <tt>images/a-team.jpg</tt>
+* <tt>images/github_logo.png</tt>
+* <tt>images/github_mini.png</tt>
+* <tt>images/jquery.jpg</tt>
+
+Now you need to change the title and the subtitle of your blog. For this you need to go to the <tt>variables/strings.js</tt> and edit the following variables:
+
+* <tt>blogTitle</tt> - Title
+* <tt>blogSubTitle</tt> - Subtitle
+
+The next step is to change the navigation bar that is displayed below the blog header, to make this you need to change the <tt>variables/headNav.xml</tt> file to add more items and change the existing ones. Just follow the example that is already included.
+
+The last thing you need to do is edit the <tt>feed.xml</tt> file to add your posts(''You'll need to change this file every time you make a new post''). Now it's all up and running!
+
+== The XML Feed ==
+
+The <tt>feed.xml</tt> file contains all the stuff that will be published on the front page, so here you can find a bit about each tag that the blog engine recognizes('''They are all obligatory'''):
+
+* <tt>Blog</tt> - The whole container
+* <tt>Entry</tt> - A new post
+** <tt>author</tt> - The author of the post
+* <tt>Title</tt> - Self explanatory
+* <tt>Date</tt> - The date of the post
+** ''Any format will be accepted, but dd/mm/yyyy is preferable''
+* <tt>Image</tt> - Every post needs a thumbnail that will be attached on the left side of each post
+** Please store '''all''' the images at the <tt>images</tt> folder
+* <tt>Content</tt> - The body of the post goes here
+** You can use HTML, CSS, Javascript here
+** Don't forget that this field needs <tt><![CDATA[]]></tt>
+
+<span style="color:#ff0000">'''Important:'''</span> The entries will be shown on the same order that they are on the file, so put the newer ones first.
+
+=== Example ===
+
+<source lang='xml'><?xml version="1.0" encoding="utf-8" ?>
+
+<Blog>
+	<Entry author="Nathan Campos">
+		<Title>Introducing the Test of plainBlog</Title>
+		<Date>25/06/2011</Date>
+		<Image>images/github_mini.png</Image>
+		<Content format="html"><![CDATA[Testing the HTML formatting things like <b>Bold</b>, <i>Italic</i> and <u>others</u><br />
+Second line with <a href="http://google.com">link</a>]]></Content>
+	</Entry>
+</Blog></source>
