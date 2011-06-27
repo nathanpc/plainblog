@@ -109,3 +109,20 @@
 .lineBreak {
 	margin-bottom: 30px;
 }
+
+footer {
+	text-align: center;
+	font-family: georgia;
+	color: #575757;
+	font-size: 13px;
+}
+
+footer a:link {
+	text-decoration: none;
+	color: #004f66;
+}
+
+footer a:visited {
+	text-decoration: none;
+	color: #004f66;
+}
