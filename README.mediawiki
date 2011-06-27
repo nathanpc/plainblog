@@ -41,7 +41,7 @@ The <tt>feed.xml</tt> file contains all the stuff that will be published on the 
 
 === Example ===
 
-<source lang='xml'><?xml version="1.0" encoding="utf-8" ?>
+<code lang='xml'><?xml version="1.0" encoding="utf-8" ?>
 
 <Blog>
 	<Entry author="Nathan Campos">
@@ -51,4 +51,4 @@ The <tt>feed.xml</tt> file contains all the stuff that will be published on the 
 		<Content format="html"><![CDATA[Testing the HTML formatting things like <b>Bold</b>, <i>Italic</i> and <u>others</u><br />
 Second line with <a href="http://google.com">link</a>]]></Content>
 	</Entry>
-</Blog></source>
+</Blog></code>
