@@ -66,4 +66,4 @@ Some sites where you can find me:
 
 Please consider donating some money for the developer so he can continue improving this project and buying more books to improve his knowledge.
 
-[[File:http://pixhost.tk/img/z5fk.png|link=https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eeepc904%40gmail%2ecom&lc=US&item_name=plainBlog%20Developer%20Support%20%2d%20Thanks%20very%20much%21%20%3a%29&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest]]
+[[File:http://pixhost.tk/img/z5fk.png|Donate|link=https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=eeepc904%40gmail%2ecom&lc=US&item_name=plainBlog%20Developer%20Support%20%2d%20Thanks%20very%20much%21%20%3a%29&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest]]
