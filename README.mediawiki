@@ -48,7 +48,7 @@ The <code>feed.xml</code> file contains all the stuff that will be published on 
 		<Title>Introducing the Test of plainBlog</Title>
 		<Date>25/06/2011</Date>
 		<Image>images/github_mini.png</Image>
-		<Content format="html"><![CDATA[Testing the HTML formatting things like <b>Bold</b>, <i>Italic</i> and <u>others</u><br />
-Second line with <a href="http://google.com">link</a>]]></Content>
+		<Content format="html"><![CDATA[Testing the HTML formatting things like <b>Bold</b> and <i>Italic</i><br />
+			Second line with <a href="http://google.com">link</a>]]></Content>
 	</Entry>
 </Blog></pre>
