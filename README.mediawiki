@@ -1,5 +1,3 @@
-= plainBlog =
-
 I've been working very hard on this to make the most lightweight blog engine possible. Everything you need is a XML file and the engine built entirely using jQuery will do the rest of the work for you. My engine will read the XML feed and parse it's content to a full featured blog! You don't need any kind of scripting language like PHP, Ruby or Python installed to run this blog engine, since it's entirely built using jQuery. Upload the files to your server, edit the <code>feed.xml</code> file and you're ready to go!
 
 == Installation ==
