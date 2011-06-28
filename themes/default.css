@@ -75,9 +75,19 @@
 	float: left;
 }
 
+.rotate {
+	float: left;
+
+	transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg); /* IE 9 */
+	-webkit-transform: rotate(-3deg); /* Safari and Chrome */
+	-o-transform: rotate(-3deg); /* Opera */
+	-moz-transform: rotate(-3deg); /* Firefox */
+}
+
 #articleBody {
 	margin-top: -10px;
-	margin-left: 264px;
+	margin-left: 266px;
 
 	padding-left: 4px;
 

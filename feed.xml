@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Blog>
-	<Entry author="Nathan Campos">
+	<Entry author="Nathan Campos" rotate-img="rotate">
 		<Title>Introducing the plainBlog</Title>
 		<Date>25/06/2011</Date>
 		<Image>images/jquery.jpg</Image>

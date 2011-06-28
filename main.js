@@ -26,7 +26,15 @@ function parseXML(xml) {
 	$(xml).find("Entry").each(function() {
 		$("#blogBody").append("<h1 id='articleTitle'>" + $(this).find("Title").text() + "</h1>");
 		$("#blogBody").append("<div id='articleAuthor'>" + $(this).attr("author") + "  -  " + $(this).find("Date").text() + "</div><br />");
-		$("#blogBody").append("<img id='articleImage' class='float' src='" + $(this).find("Image").text() + "' />");
+
+		var imgClass = null;
+		if($(this).attr("rotate-img") != "rotate") {
+			imgClass = "float";
+		} else {
+			imgClass = "rotate";
+		}
+		$("#blogBody").append("<img id='articleImage' class='" + imgClass + "' src='" + $(this).find("Image").text() + "' />");
+
 		$("#blogBody").append("<div id='articleBody'><br />" + $(this).find("Content").text() + "</div><br />");
 		$("#blogBody").append("<hr class='lineBreak'>");
 	});
