@@ -1,21 +1,10 @@
-=== plainBlog ===
-==== The most lightweight blog engine ever! ====
+= plainBlog =
 
 I've been working very hard on this to make the most lightweight blog engine possible. Everything you need is a XML file and the engine built entirely using jQuery will do the rest of the work for you. My engine will read the XML feed and parse it's content to a full featured blog! You don't need any kind of scripting language like PHP, Ruby or Python installed to run this blog engine, since it's entirely built using jQuery. Upload the files to your server, edit the <code>feed.xml</code> file and you're ready to go!
 
 == Installation ==
 
-The installation is very simple, all that you need to do is copy the files to your server public web directory(usually <code>/var/www</code> for UNIX systems running Apache), delete the example files:
-
-* <code>images/a-team.jpg</code>
-* <code>images/github_logo.png</code>
-* <code>images/github_mini.png</code>
-* <code>images/jquery.jpg</code>
-
-Now you need to change the title and the subtitle of your blog. For this you need to go to the <code>variables/strings.js</code> and edit the following variables:
-
-* <code>blogTitle</code> - Title
-* <code>blogSubTitle</code> - Subtitle
+The installation is very simple, all that you need to do is copy the files to your server public web directory(usually <code>/var/www</code> for UNIX systems running Apache), now run the new script that will configure some stuff for you by running <code>./config.sh</code>.
 
 The next step is to change the navigation bar that is displayed below the blog header, to make this you need to change the <code>variables/headNav.xml</code> file to add more items and change the existing ones. Just follow the example that is already included.
 
