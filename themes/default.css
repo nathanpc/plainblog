@@ -13,6 +13,11 @@
 	font-size: 20px;
 }
 
+.titleLink {
+	text-decoration: none;
+	color: #000;
+}
+
 #headNavBar {
 	text-align: center;
 	font-family: georgia;
@@ -41,9 +46,9 @@
 	padding-left: 50px;
 	padding-bottom: 40px;
 	
-	box-shadow: 0 0 4px 4px #888;
-	-webkit-box-shadow: 0 0 4px 4px #888;
-	-moz-box-shadow: 0 0 4px 4px #888;
+	box-shadow: 0 0 5px 2px #888;
+	-webkit-box-shadow: 0 0 5px 2px #888;
+	-moz-box-shadow: 0 0 5px 2px #888;
 }
 
 #articleTitle {
@@ -51,6 +56,11 @@
 
 	font-size: 21px;
 	line-height: 1px;
+}
+
+.linkTitle {
+	text-decoration: none;
+	color: #000;
 }
 
 #articleAuthor {
@@ -62,6 +72,7 @@
 }
 
 #articleImage {
+	float: left;
 	max-width: 250px;
 	max-height: 350px;
 
@@ -69,20 +80,6 @@
 	box-shadow: 0 0 5px #888;
 	-moz-box-shadow: 0 0 5px #888;
 	-webkit-box-shadow: 0 0 5px #888;
-}
-
-.float {
-	float: left;
-}
-
-.rotate {
-	float: left;
-
-	transform: rotate(-3deg);
-	-ms-transform: rotate(-3deg); /* IE 9 */
-	-webkit-transform: rotate(-3deg); /* Safari and Chrome */
-	-o-transform: rotate(-3deg); /* Opera */
-	-moz-transform: rotate(-3deg); /* Firefox */
 }
 
 #articleBody {
