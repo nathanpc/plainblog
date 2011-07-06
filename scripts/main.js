@@ -45,7 +45,7 @@ function parseXML(xml) {
 
 		$("#blogBody").append("<img id='articleImage' " + selectedTitle + " src='" + $(this).find("Image").text() + "' />");
 
-		$("#blogBody").append("<div id='articleBody' " + selectedTitle + "><br />" + $(this).find("Content").text() + "</div><br />");
+		$("#blogBody").append("<div id='articleBody' " + selectedTitle + "><br />" + $(this).find("Content").text() + "</div><br class='break' />");
 
 		$("#blogBody").append("<hr class='lineBreak'>");
 	});
@@ -54,8 +54,14 @@ function parseXML(xml) {
 
 	param = getParamByName("entry");
 	if(param != "null") {
+		document.title = $(".linkTitle").text() + " - " + blogTitle;
 		$(".hidden").remove();
 		$(".lineBreak").remove();
+		$(".break").remove();
+		$("#articleTitle").prevAll("br").remove();
+		$("#blogBody").append("<a href='http://twitter.com/share' class='twitter-share-button' data-url='" + window.location.href + "' data-text='" + $(".linkTitle").text() + "' data-count='vertical' data-via='nathanpc'>Tweet</a><script type='text/javascript' src='http://platform.twitter.com/widgets.js'></script>");
+		$("#blogBody").append(" <iframe src='http://www.facebook.com/plugins/like.php?app_id=217624258276389&amp;" + window.location.href + "&amp;send=false&amp;layout=box_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=60' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:50px; height:60px;' allowTransparency='true'></iframe>");
+		$("#blogBody").append(" <script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script><g:plusone size='tall' href='" + window.location.href + "'></g:plusone>");
 	}
 
 	$(".lineBreak").filter(":last").remove();
