@@ -6,7 +6,7 @@ $(document).ready(function() {
 	
 	$.ajax({
 		type: "GET",
-		url: "variables/headNav.xml",
+		url: location_url + "variables/headNav.xml",
 		dataType: "xml",
 		success: appendHeadNav,
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	
 	$.ajax({
 		type: "GET",
-		url: "feed.xml",
+		url: location_url + "feed.xml",
 		dataType: "xml",
 		success: parseXML,
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -43,7 +43,7 @@ function parseXML(xml) {
 
 		$("#blogBody").append("<div id='articleAuthor' " + selectedTitle + ">" + $(this).attr("author") + "  -  " + $(this).find("Date").text() + "</div><br />");
 
-		$("#blogBody").append("<img id='articleImage' " + selectedTitle + " src='" + $(this).find("Image").text() + "' />");
+		$("#blogBody").append("<img id='articleImage' " + selectedTitle + " src='" + location_url + $(this).find("Image").text() + "' />");
 
 		$("#blogBody").append("<div id='articleBody' " + selectedTitle + "><br />" + $(this).find("Content").text() + "</div><br class='break' />");
 

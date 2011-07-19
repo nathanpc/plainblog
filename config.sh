@@ -11,6 +11,9 @@ echo "var blogTitle = '$title';" > "variables/strings.js"
 echo "Blog subtitle: \c"
 read subtitle
 echo "var blogSubTitle = '$subtitle';" >> "variables/strings.js"
+echo "Blog URL: \c"
+read url
+echo "var location_url = '$url';" >> "variables/strings.js"
 echo "Done!"
 
 tput bold
