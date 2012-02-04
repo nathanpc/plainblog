@@ -31,14 +31,16 @@ function parseXML(xml) {
 		var title = $(this).find("Title").text();
 		var param = getParamByName("entry");
 
-		if(param = "null") {
+		if (param = "null") {
 			selectedTitle = "class='selected'";
 		}
-		if(title != getParamByName("entry")) {
+		
+		if (title != getParamByName("entry")) {
 			selectedTitle = "class='hidden'";
 		} else {
 			selectedTitle = "class='selected'";
 		}
+
 		$("#blogBody").append("<h1 id='articleTitle' " + selectedTitle + "><a href='?entry=" + escape($(this).find("Title").text()) + "' class='linkTitle'>" + $(this).find("Title").text() + "</a></h1>");
 
 		$("#blogBody").append("<div id='articleAuthor' " + selectedTitle + ">" + $(this).attr("author") + "  -  " + $(this).find("Date").text() + "</div><br />");
@@ -53,7 +55,7 @@ function parseXML(xml) {
 	$("#blogBody").css("min-height", $("#articleImage").outerHeight());
 
 	param = getParamByName("entry");
-	if(param != "null") {
+	if (param != "null") {
 		document.title = $(".linkTitle").text() + " - " + blogTitle;
 		$(".hidden").remove();
 		$(".lineBreak").remove();
