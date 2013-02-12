@@ -1,0 +1,3 @@
+# plainblog
+
+The lightweight CMS.
